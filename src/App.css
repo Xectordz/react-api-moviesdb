@@ -1,0 +1,111 @@
+.viewtrailer{
+    min-height: 700px;
+    background-size: cover;
+    background-position: center;
+
+    display: block;
+    align-items: flex-end;
+}
+.title-app{
+    font-size: 2rem;
+    display: block;
+    text-decoration: none;
+}
+.boton{
+    background-color: #0F1014;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 3rem;
+}
+.text-overall{
+    width: 100%;
+}
+@media(min-width: 700px){
+    .text-movie{
+        width: 50%;
+    }
+}
+@media(min-width: 800px){
+    .text-movie{
+        width: 70%;
+    }
+}
+@media(min-width: 1200px){
+    .text-movie{
+        width: 50%;
+    }
+}
+.search input{
+    padding: .3rem 1rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+.search button{
+    background-color: rgb(75, 75, 224);
+    padding: .3rem 1rem;
+    color: white;
+    border-radius: 2rem;
+    border: 1px solid black;
+}
+.reproductor{
+    width: 100%;
+    height: 600px;
+}
+body{
+    background-color: black;
+}
+.card-movie{
+    border-radius: .2rem;
+    margin: .5rem;
+    background-color: white;
+    background: linear-gradient(rgb(0, 0, 0), rgb(60, 80, 167))
+}
+.card-movie:hover{
+    transform: scale(1.1);
+    transition: .6s;
+}
+.grid-movies{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2rem;
+    gap: 2rem;
+}
+@media (min-width: 520px) {
+    .grid-movies {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0;
+      gap: 1rem;
+    }
+}
+@media (min-width: 780px) {
+    .grid-movies {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem;
+    }
+}
+@media (min-width: 1200px) {
+    .grid-movies {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 1700px) {
+    .grid-movies {
+      grid-template-columns: repeat(5, 1fr);
+    }
+}
+.img-movie{
+  display: block; /* Asegura que la imagen se muestre como un bloque */
+  width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  max-width: 100%; /* Limita el tamaño máximo de la imagen al 100% del contenedor */
+  max-height: 100%; /* Limita el tamaño máximo de la imagen al 100% del contenedor */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
